@@ -1,0 +1,50 @@
+{% extends 'base.template.html' %}
+
+{% block ptitle %}
+New Sighting Registration
+{% endblock %}
+
+{% block title %}
+New Sighting Registration
+{% endblock %}
+
+{% block content %}
+<form method="POST">
+    <div class="col-8 my-3">
+    <label class="form-label">Title:</label>
+    <input type="text" class="form-control" name="title" placeholder="Where did you spot it?">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Date:</label>
+    <input type="text" class="form-control" name="date" placeholder="Which Day/Month/Year did you see it?">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Time:</label>
+    <input type="text" class="form-control" name="time" placeholder="Give an approximate time of the sighting">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Email:</label>
+    <input type="text" class="form-control" name="email" placeholder="Provide a contactable email">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Duration:</label>
+    <input type="text" class="form-control" name="time" placeholder="Enter the duration of the sighting in mins">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Latitude:</label>
+    <input type="text" class="form-control" name="time" placeholder="Enter the latitude of the sighting">
+    </div>
+    <div class="col-8 my-3">
+    <label class="form-label">Longtitude:</label>
+    <input type="text" class="form-control" name="time" placeholder="Enter the Longtitude of the sighting">
+    </div>
+    <div class="d-flex flex-column my-3 ml-3">
+    <label class="form-label">Description:</label>
+    <textarea name="description" rows="4" cols="50" placeholder="Give a brief description of the encounter: "></textarea>
+    </div>
+    <input type="submit" class="ml-3 btn btn-dark">
+
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.template.html' %}
+
+{% block ptitle %}
+Sighting Display
+{% endblock %}
+
+{% block title %}
+Sighting Info:
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for sighting in database %}
+    <li> ===================================== </li>
+    <li> Title: {{sighting.title}}</li>
+    <li> Date: {{sighting.date}}</li>
+    <li> Time: {{sighting.time}}</li>
+    <li> Email: {{sighting.email}}</li>
+    <li> Duration: {{sighting.duration}}</li>
+    <li> Latitude: {{sighting.latitude}}</li>
+    <li> Longtitude: {{sighting.longtitude}}</li>
+    <li> Description: {{sighting.description}}</li>
+    <li> ====================================== </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

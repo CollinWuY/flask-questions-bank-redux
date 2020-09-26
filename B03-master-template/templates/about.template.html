@@ -1,3 +1,18 @@
+{% extends ('master_template.template.html')%}
+
+{% block page_title %}
+About Us
+{% endblock %}
+
+{% block bg %}
+/static/about-us_copy.jpg
+{% endblock %}
+
+{% block btn_link %}
+about
+{% endblock %}
+
+{% block content %}
 <h2>What can I do with this ?</h2><br />
 		<img src="http://randomtextgenerator.com/www/images/random_bird.jpg" align="left" id="random_bird" />
 		This tool was created because we wanted random text for our web designs. When we show a design
@@ -26,3 +41,4 @@
 		Our random text generator was made in PHP and MySQL.
 		
 		<br /><br /><br />
+{% endblock %}

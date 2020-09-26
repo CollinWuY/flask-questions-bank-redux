@@ -1,0 +1,20 @@
+#homejum {   
+    background-image: url('/static/home_copy.jpg');
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#aboutjum {
+    background-image: url('/static/about-us_copy.jpg');
+    background-repeat: no-repeat;
+    background-size: fill;
+    color: white;
+}
+
+#visionjum {
+    background-image: url('/static/about-us_copy.jpg');
+    background-repeat: no-repeat;
+    background-size: fill;
+    color: white;
+}
